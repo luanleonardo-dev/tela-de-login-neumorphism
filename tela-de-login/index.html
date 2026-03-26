@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="login caixa-de-login">
+        <h1>Login</h1>
+        <input type="text" placeholder="Username" class="login login-usuario">
+        <input type="password" placeholder="Password" class="login login-usuario">
+        <button class="login login-botao">Sign In</button>
+        <button class="tema-botao" onclick="alternarTema()">Alternar Tema</button>
+  </div>
+
+  <script>
+    function alternarTema() {
+      document.documentElement.classList.toggle('dark-mode');
+    }
+  </script>
+    
+</body>
+</html>

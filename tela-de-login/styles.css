@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e0e5ec;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.login {
+    background-color: #e0e5ec;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px #a3b1c6, -10px -10px 10px #ffffff;
+}
+.login-inset {
+    background-color: #e0e5ec;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px #a3b1c6, -10px -10px 10px #ffffff;
+}
+.caixa-de-login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    width: 300px;
+    text-align: center;
+}
+h1 {
+    color: #6d7582;
+    margin-bottom: 20px;
+}
+.login-usuario{
+    padding: 15px;
+    width: 80%;
+    font-size: 16px;
+    color: #6d7582;
+    border: none;
+    outline: none;
+    margin-bottom: 25px;
+}
+.login-usuario::placeholder {
+    color: #a3b1c6;
+}
+.login-botao {
+    padding: 15px 30px;
+    font-size: 16px;
+    color: #6d7582;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.login-botao:active {
+    box-shadow: inset 5px 5px 10px #a3b1c6, inset -5px -5px 10px #ffffff;
+}
+.tema-botao {
+    position: absolute;
+      top: 20px;
+      right: 20px;
+      background-color: transparent;
+      border: 2px solid #6d7582;
+      color: #6d7582;
+      padding: 10px 20px;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    /* 🌙 MODO ESCURO */
+    .dark-mode body {
+      background-color: #1e1e1e;
+    }
+
+    .dark-mode .login {
+      background-color: #1e1e1e;
+      box-shadow: 10px 10px 10px #111111, -10px -10px 10px #2d2d2d;
+    }
+
+    .dark-mode h1,
+    .dark-mode .login-usuario,
+    .dark-mode .login-usuario::placeholder,
+    .dark-mode .login-botao,
+    .dark-mode .tema-botao {
+      color: #d1d1d1;
+    }
+
+    .dark-mode .tema-botao {
+      border-color: #d1d1d1;
+    }
